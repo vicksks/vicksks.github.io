@@ -220,6 +220,17 @@ hr.small {
     margin: 10px;
 }
 
+.imgsize{
+    height: 300px;
+    width: 300px;
+}
+@media(min-width:650px) {
+    .imgsize {
+        height: 500px;
+    width: 500px;
+    }
+}
+
 /* Map */
 
 .map {
@@ -248,3 +259,6 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+         
+    
