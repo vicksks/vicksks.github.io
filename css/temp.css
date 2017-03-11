@@ -1,0 +1,26 @@
+.back{
+    background-color: #5e4b4b;
+}
+.glyphcolor
+{
+    color:#5e4b4b;
+}
+.cursi
+{
+    color:#5e4b4b;
+    font-size: 50px;
+    font-family: 'Yesteryear', cursive;
+}
+
+.subtit
+{
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.date{
+    color:#5e4b4b;
+     font-family: 'Alice', serif;
+     font-size: 50px;
+}
