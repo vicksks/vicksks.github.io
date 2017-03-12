@@ -10,7 +10,7 @@ p.small{
     font-size:16px
 }
 a,a.active,a:active,a:focus{
-    color:white;
+    color:rgba(62, 41, 31, 0.56);
     outline:0;
     text-decoration: none;
 }
@@ -114,25 +114,26 @@ header .intro-text .skills{
     letter-spacing:1px
 }
 .navbar-custom .navbar-nav li a:hover{
-    color:rgba(245, 245, 245, 0.77);
-    outline:0
+color:rgba(62, 41, 31, 0.56);
+    outline:0;
 }
 .navbar-custom .navbar-nav li a:active,.navbar-custom .navbar-nav li a:focus{
-    color:#fff
+    color:rgba(62, 41, 31, 0.56);
+
 }
 .navbar-custom .navbar-nav li.active a,.navbar-custom .navbar-nav li.active a:active,.navbar-custom .navbar-nav li.active a:focus,.navbar-custom .navbar-nav li.active a:hover{
-    color:#fff;
+    color:rgba(62, 41, 31, 0.56);
     background:#18BC9C
 }
 .navbar-custom .navbar-toggle{
-    color:#fff;
+    color:rgba(62, 41, 31, 0.56);
     text-transform:uppercase;
     font-size:12px;
     border-color:#fff
 }
 .navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{
     background-color:#18BC9C;
-    color:#fff;
+    color:rgba(62, 41, 31, 0.56);
     border-color:#18BC9C
 }
 @media (min-width:768px){
