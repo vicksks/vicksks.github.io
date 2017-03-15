@@ -36,8 +36,30 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+<!-- KSV's functions-->
+<script>
+    $( document ).ready(function() {
+      $.ajax({url: "https://ajaxhello.herokuapp.com/customers", success: function(result){
+           //alert(result);
+        }});
+        $.ajax({url: "https://ajaxhello.herokuapp.com/customerslove", success: function(result){
+           //alert(result);
+           $("#loves").text(result+" loves so far");
+        }});
+});
+   $( document ).ready(function() {
+$( "#target" ).click(function() {
+     $.ajax({url: "https://ajaxhello.herokuapp.com/customerslove", success: function(result){
+           //alert(result);
+           $("#loves").text(result=" loves so far");
+        }});
+  
+});
+});
 
-
+    </script>
 </head>
 
 <body>
@@ -204,71 +226,39 @@
     </section>
 
     <div class="page-header">
-  <h1>Share Dialog</h1>
+
 </div>
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fvicksks.github.io&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary" style="background-color:rgba(63, 63, 63, 0.85)">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Wish Me LUCK</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-12 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-desktop fa-stack-1x text-primary" style="padding-top:4px;color:rgba(63, 63, 63, 0.85)"></i>
+                                <i class="fa fa-heart fa-stack-1x text-primary" style="padding-top:4px;color:rgba(63, 63, 63, 0.85)"></i>
                             </span>
                                 <h4>
-                                    <strong>Desktop Issues</strong>
+                                    <strong id="loves">loves so far</strong>
                                 </h4>
                               
                                 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-laptop fa-stack-1x text-primary"  style="color:rgba(63, 63, 63, 0.85);"></i>
-                            </span>
-                                <h4>
-                                    <strong>Laptop Issues</strong>
-                                </h4>
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-wifi fa-stack-1x text-primary" style="padding-top:4px;color:rgba(63, 63, 63, 0.85);"></i>
-                            </span>
-                                <h4>
-                                    <strong>Network Issues</strong>
-                                </h4>
-                               
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-file-code-o fa-stack-1x text-primary" style="color:rgba(63, 63, 63, 0.85);"></i>
-                            </span>
-                                <h4>
-                                    <strong>Software Issues</strong>
-                                </h4>
-                  
-                               <!-- <a href="#" class="btn btn-light">Click to fix Software</a>-->
-                            </div>
-                        </div>
+                       
                     </div>
-                    <a href="#DeskLap" class="btn btn-light">Know More</a>
+                    <a id="target"  class="btn btn-lg btn-default"><span class="glyphicon glyphicon-heart-empty"></span>click to Wish Navanee</a>
+
+                    <div class="row">
+                        <br>
+                        <iframe class ="col-md-offset-2"src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fvicksks.github.io&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
@@ -277,125 +267,38 @@
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout" id="phone">
-        <div class="text-vertical-center">
-            <h1>CALL US @ +91-9962179465</h1>
-        </div>
-    </aside>
-<!-- About Section -->
-    <section class="success" id="DeskLap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Desktop & Laptop Issues</h2>
-                  
-                </div>
-            </div>
-            
-                <diiuv class="col-lg-12  text-left">
-                    <div class="list-group">
-                    <div class="row">
-                    <div class="col-lg-3 col-lg-offset-3">
-  <li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Slow Performance</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Viruses, Malware & Spyware</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Windows Support</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Software Errors</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Installation </li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Upgrades</li>
-
-  </div>
-   <div class="col-lg-6">
-  <li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Printer Setup</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Hardware issues*</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Windows XP,Vista,7, 8, & 10 installations and setup</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Mail configurations(outlook, lotus notes)</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Clone the windows image in the case of Harddisk Failure</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Backup and repair no boot issues</li>
-
-  </div>
-  </div>
-</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Internet Issues & More </h2>
-                  
-                </div>
-            </div>
-            
-                <diiuv class="col-lg-12  text-left">
-                    <div class="list-group">
-                    <div class="row">
-                    <div class="col-lg-3 col-lg-offset-3">
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Modem Troubleshooting</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Firewall setup</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Data Backup</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Data Recovery</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Speed & Performance Issues</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Troubleshoot Connection </li>
-  </div>
-   <div class="col-lg-6">
-  <li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Printer  & Scanner Support</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Network refreh or reset</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Wireless Setup & Home Networking</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Parental Control Setup</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>Learning & Training</li>
-<li class="list-group-item lides"><span class="glyphicon glyphicon-menu-right"></span>On-Site Computer Repair</li>
-
-  </div>
-  </div>
-</div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-   
-
-   
-
     <!-- Footer -->
     
         <div class="containerfoot" id="contact">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center foo">
                         <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (+91) 9962179465</li>
-                        <li><i class="fa fa-envelope-o fa-fw foo"></i> <a href="mailto:wesupportnow@zoho.com"><span class="foo">wesupportnow@zoho.com</span></a>
+                        <li><i class="fa fa-phone fa-fw"></i> (+97) 152 912 2520 Dubai      &nbsp&nbsp&nbsp(+91) 733 940 3473 India</li>
+                        
+                        <li><i class="fa fa-envelope-o fa-fw foo"></i> <a href="mailto:navanee77@gmail.com"><span class="foo">navanee77@gmail.com</span></a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x foo"></i></a>
+                            <a href="https://www.facebook.com/navaneethakrishnan.karuppiah" target="_blank"><i class="fa fa-facebook fa-fw fa-3x foo"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x foo"></i></a>
+                            <a href="https://twitter.com/navanee77" target="_blank"><i class="fa fa-twitter fa-fw fa-3x foo"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x foo"></i></a>
+                            <a href="https://navanee.com" target="_blank"><i class="fa fa-dribbble fa-fw fa-3x foo"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">wesupportnow.com | 2016</p>
+                    <p class="text-muted">navanee.com | 2017</p>
                 </div>
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -473,15 +376,11 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
-<script>
-document.getElementById('shareBtn').onclick = function() {
-  FB.ui({
-    method: 'share',
-    display: 'popup',
-    href: 'https://developers.facebook.com/docs/',
-  }, function(response){});
-}
-</script>
+
+
+
+
+
 </body>
 
 </html>

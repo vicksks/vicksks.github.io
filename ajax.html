@@ -5,8 +5,9 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.ajax({url: "https://ajaxhello.herokuapp.com/rest/", success: function(result){
-           // alert(result);
+        $.ajax({url: "https://ajaxhello.herokuapp.com/customer/", success: function(result){
+           alert(result);
+           
             $("#div1").html(result);
         }});
     });
