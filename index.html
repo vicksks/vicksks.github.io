@@ -53,7 +53,7 @@
 $( "#target" ).click(function() {
      $.ajax({url: "https://ajaxhello.herokuapp.com/customerslove", success: function(result){
            //alert(result);
-           $("#loves").text(result=" loves so far");
+           $("#loves").text(result+" loves so far");
         }});
   
 });
